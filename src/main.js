@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Vuelidate from 'vuelidate'
+import VueCarousel from 'vue-carousel';
 
 import router from './router'
 import store from './store'
 
 Vue.use(Vuelidate)
+Vue.use(VueCarousel)
 
 router.beforeEach((to, from, next) => {
       // redirect to login page if not logged in and trying to access a restricted page
