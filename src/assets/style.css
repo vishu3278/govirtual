@@ -7,7 +7,6 @@ html {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  /* background: #feed01; */
   background: #fff;
 }
 svg {
@@ -87,6 +86,7 @@ a {
   width: 100%;
   display: block;
 }
+
 .button.ripple {
   position: relative;
 }
@@ -101,6 +101,7 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .red-text {
   color: #ff0741;
 }
@@ -132,6 +133,7 @@ h4 {
 }
 .hero-banner,
 .lobby-banner,
+
 .stall-banner {
   position: fixed;
   top: 0;
@@ -147,6 +149,9 @@ h4 {
 }
 .stall-banner {
   background-image: url('~@/assets/2x-inside.png');
+} 
+.error {
+color: red;margin-left:8px;
 }
 .wrapper {
   position: absolute;
@@ -161,6 +166,13 @@ h4 {
 .wrapper.top .menu {
   top: 100%;
   bottom: initial;
+}
+
+.lobby-banner {
+  background-image: url(~@/assets/2x-lobby.png);
+  }
+  .stall-banner {
+background-image: url(~@/assets/2x-inside.png);
 }
 .navbar {
   display: flex;
@@ -211,6 +223,7 @@ h4 {
   display: block;
   text-transform: uppercase;
   padding: 1em;
+<<<<<<< HEAD
   color: #000f60;
 }
 .navbar .menu a:hover, .navbar .menu a:focus {
@@ -218,6 +231,11 @@ h4 {
 }
 .intro-wrapper {
   background: rgba(0, 0, 0, 0.7);
+=======
+}
+.intro-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+>>>>>>> 17f0f0186706b2f75ce99d1ad99bca235d2039cf
   position: fixed;
   top: 0;
   right: 0;
@@ -540,6 +558,7 @@ h4 {
 .form .flex {
   display: flex;
 }
+
 .form .flex .input-wrap {
   margin-left: 10px;
 }

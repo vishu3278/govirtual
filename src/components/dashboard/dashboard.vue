@@ -30,16 +30,13 @@
         <div class="info-desk">
             <div class="button-wrap">
                 <router-link to="/stalls" class="button ripple red animate__animated animate__headShake animate__repeat-3 ">Enter Expo</router-link>
-                
             </div>
             <a href="!#" class="text-right" style="display: block;"><img src="~@/assets/helpdesk.png" class="helpdesk" alt=""></a>
         </div>
-        
         <bottom-slider></bottom-slider>
     </div>
     <div class="modal bottom">
         <button class="close animate__animated animate__rotateIn animate__delay-2s">
-      
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 344.971 344.971" style="enable-background:new 0 0 344.971 344.971;" xml:space="preserve">
                 <path d="M342.622,330.438L183.814,172.494L341.79,13.646c3.117-3.133,3.105-8.199-0.028-11.316
 c-3.133-3.117-8.199-3.105-11.316,0.028l0,0L172.502,161.182L13.67,3.206C10.537,0.089,5.471,0.101,2.354,3.234
