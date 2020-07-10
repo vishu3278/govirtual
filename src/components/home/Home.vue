@@ -64,10 +64,10 @@ export default {
     }
   },
   created() {
-    setTimeout(function() {
+    /*setTimeout(function() {
       var intro = document.getElementsByClassName('intro-wrapper');
       intro[0].style.display = 'none';
-    }, 5000);
+    }, 5000);*/
 
   },
   components: {

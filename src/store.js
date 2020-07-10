@@ -11,7 +11,9 @@ export default new Vuex.Store({
   state: {
     step: 0,
     mobilenumber: '',
-    showmenu:false
+    showmenu: false,
+    participant:'none',
+    project: 'none'
   },
   mutations: {
     changeStatus (state,step) {
@@ -22,8 +24,13 @@ export default new Vuex.Store({
     },
     updatemenu (state,senttype) {
       state.showmenu = senttype
+    },
+    showParticipant (state,data) {
+      state.participant = data
+    },
+    showProject (state,data) {
+      state.project = data
     }
-   
   },
   actions: {
     signup({ commit, dispatch }, authData) {
@@ -98,6 +105,12 @@ export default new Vuex.Store({
     },
     getmenu (state) {
       return state.showmenu
+    },
+    getParticipant (state) {
+      return state.participant
+    },
+    getProject (state) {
+      return state.project
     }
   }
 })

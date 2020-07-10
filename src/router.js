@@ -10,14 +10,14 @@ import StallsPage from './components/dashboard/stalls.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', component: HomePage },
+  { path: '/bhopal', component: HomePage },
   { path: '/informationdesk', component: InformationDeskPage },
   { path: '/exhibitor', component: ExhibitorPage },
   { path: '/dashboard', component: DashboardPage },
   { path: '/stall/:id', name: 'stalldetail',component: StallPage },
   { path: '/stalls', component: StallsPage },
-  { path: '*', redirect: '/' }
+  { path: '*', redirect: '/bhopal' }
  
 ]
 
-export default new VueRouter({mode: 'history', routes})
+export default new VueRouter({mode: 'hash',base: "virtual-expo", routes})
