@@ -5,7 +5,6 @@ import VueCarousel from 'vue-carousel';
 
 import router from './router'
 import store from './store'
-import VueCarousel from 'vue-carousel';
 
 Vue.use(Vuelidate)
 Vue.use(VueCarousel)
