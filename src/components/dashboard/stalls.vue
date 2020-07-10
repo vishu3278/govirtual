@@ -77,7 +77,6 @@ export default {
     },
   }
 }
-
 </script>
 <style>
 .VueCarousel-navigation-prev[data-v-453ad8cd],

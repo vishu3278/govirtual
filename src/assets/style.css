@@ -96,12 +96,13 @@ a {
   background: url('~@/assets/ripple.svg') no-repeat center;
   background-size: cover;
   position: absolute;
-  height: 60px;
+  height: 140%;
   width: 70%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .red-text {
   color: #ff0741;
 }
@@ -133,6 +134,7 @@ h4 {
 }
 .hero-banner,
 .lobby-banner,
+
 .stall-banner {
   position: fixed;
   top: 0;
@@ -148,6 +150,9 @@ h4 {
 }
 .stall-banner {
   background-image: url('~@/assets/interior.png');
+} 
+.error {
+color: red;margin-left:8px;
 }
 .wrapper {
   position: absolute;
@@ -162,6 +167,13 @@ h4 {
 .wrapper.top .menu {
   top: 100%;
   bottom: initial;
+}
+
+.lobby-banner {
+  background-image: url(~@/assets/2x-lobby.png);
+  }
+  .stall-banner {
+background-image: url(~@/assets/2x-inside.png);
 }
 .navbar {
   display: flex;
@@ -217,7 +229,9 @@ h4 {
 .navbar .menu a:hover, .navbar .menu a:focus {
   color: #ff0741;
 }
+
 .navbar .help { width: 30px; height: 26px; margin-right: 10px; }
+
 .intro-wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -491,9 +505,9 @@ h4 {
   font-size: 18px;
 }
 .detail .view-detail .button {
-  background: #151515;
   color: white;
   border-radius: 8px;
+  background: #ff0741;
 }
 .back {
   background: rgba(25,25,25,0.45);
@@ -540,6 +554,7 @@ h4 {
 .form .flex {
   display: flex;
 }
+
 .form .flex .input-wrap {
   margin-left: 10px;
 }
@@ -730,7 +745,6 @@ h4 {
   .navbar .user .icon { display: block; height: 28px; }
   .navbar .user .logout { margin-left: 20px; display: block; }
   .navbar .help { display: none; }
-
   .hero-banner,
   .lobby-banner,
   .stall-banner {

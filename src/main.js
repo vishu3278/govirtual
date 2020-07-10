@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Vuelidate from 'vuelidate'
+import VueCarousel from 'vue-carousel';
 
 import router from './router'
 import store from './store'

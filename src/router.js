@@ -17,7 +17,6 @@ const routes = [
   { path: '/stall/:id', name: 'stalldetail',component: StallPage },
   { path: '/stalls', component: StallsPage },
   { path: '*', redirect: '/bhopal' }
- 
 ]
 
 export default new VueRouter({mode: 'hash',base: "virtual-expo", routes})
