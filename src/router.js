@@ -7,6 +7,7 @@ import ExhibitorPage from './components/exhibitor/exhibitor.vue'
 import DashboardPage from './components/dashboard/dashboard.vue'
 import StallPage from './components/dashboard/stall.vue'
 import StallsPage from './components/dashboard/stalls.vue'
+import Panorama from './components/dashboard/Panorama.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +16,7 @@ const routes = [
   { path: '/exhibitor', component: ExhibitorPage },
   { path: '/dashboard', component: DashboardPage },
   { path: '/stall/:id', name: 'stalldetail',component: StallPage },
+  { path: '/panorama', component: Panorama },
   { path: '/stalls', component: StallsPage },
   { path: '*', redirect: '/bhopal' }
 ]

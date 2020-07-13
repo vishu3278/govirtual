@@ -15,7 +15,7 @@
           <div class="button-wrap">
             <router-link to="/stalls" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
           </div>
-          <a @click="openParticipant" class="text-right link ripple" style="display: block;"><img src="~@/assets/helpdesk.png" class="helpdesk" alt=""></a>
+          <a @click.prevent="openParticipant" class="text-right link ripple" style="display: block;"><img src="~@/assets/helpdesk.png" class="helpdesk" alt=""></a>
         </div>
         <gold-slider></gold-slider>
         <bottom-slider></bottom-slider>
@@ -46,7 +46,7 @@
           <div class="button-wrap">
             <router-link to="/stalls" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
           </div>
-          <a href="!#" @click="openParticipant" class="text-right link ripple " style="display: block;"><img src="~@/assets/helpdesk.png" class="helpdesk" alt=""></a>
+          <a @click.prevent="openParticipant" class="text-right link ripple " style="display: block;"><img src="~@/assets/helpdesk.png" class="helpdesk" alt=""></a>
         </div>
         <bottom-slider></bottom-slider>
       </div>
