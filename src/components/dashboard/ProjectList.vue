@@ -23,17 +23,17 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                   </div>
                 </div>
                 <div class="col prop-details">
+                  <div class="builder-name"> <h4>Shrimad Constructions</h4> <span class="verified">Verified</span>
+                  </div>
                   <div class="price flex">
                     <div class="prices">
-                      <span class="rera ">Rera</span> <!-- <span class="offer">Offer</span> --><br>&#x20B9; <strong>12 - 24 Lac</strong>
+                      &#8377; <strong>12 - 24 Lac</strong> 
                     </div>
-                    <span class="verified">Verified</span>
+                    <span class="rera ">Rera</span>
                   </div>
                   <h2 class="prop-title">
                     2 BHK Row House
                   </h2>
-                  <div class="builder-name"> by <span>Shrimad Constructions</span>
-                  </div>
                   <div class="location-name" > Trilanga</div>
                   <div class="proj-units">
                         Ready to move
@@ -43,7 +43,7 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                     </div>
                 </div>
               </div>
-              <div class="offercontent"> <span>Offer</span> - Mahashivratri Offer : Get 10 lacs discount on booking of Row House
+              <div class="offercontent"> <span>Offer</span> Mahashivratri Offer : Get 10 lacs discount on booking of Row House
                 </div>
                   <div class="btn-wrapper">
                     <a href="https://preprod.homeonline.com/sale/residential_plot-bhojpur_road-bhopal/IPMPLJJ5LUU8/srchdet" target="_blank" class="button  "> View Detail</a>
@@ -58,17 +58,18 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                   </div>
                 </div>
                 <div class="col prop-details">
+                  <div class="builder-name"> <h4>Sankalp Realty</h4> <span class="verified">Verified</span>
+                  </div>
                   <div class="price flex">
                     <div class="prices">
-                      <span class="rera ">Rera</span> <!-- <span class="offer">Offer</span> --><br>&#x20B9; <strong>24 Lac</strong>
+                      &#8377; <strong>36.2 Lac</strong> 
                     </div>
-                    <span class="verified">Verified</span>
+                    <span class="rera ">Rera</span>
                   </div>
                   <h2 class="prop-title">
                     3 BHK Villa
                   </h2>
-                  <div class="builder-name"> by <span>Shrimad Constructions</span>
-                  </div>
+                  
                   <div class="location-name" > Kolar Road</div>
                   <div class="proj-units">
                         Ready to move
@@ -78,7 +79,7 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                     </div>
                 </div>
               </div>
-              <div class="offercontent"> <span>Offer</span> - Mahashivratri Offer : Get 10 lacs discount on booking of Row House
+              <div class="offercontent"> <span>Offer</span> Mahashivratri Offer : Get 10 lacs discount on booking of Row House
                 </div>
               <div class="btn-wrapper">
                 <a href="https://preprod.homeonline.com/sale/4BHK-apartment-kolar_road-bhopal/SH6HT8Z72UC6/srchdet" target="_blank" class="button "> View Detail</a>

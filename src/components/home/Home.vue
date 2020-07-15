@@ -5,7 +5,7 @@
       <div class="wrapper">
         <app-header @modalstatusheader="showModal=$event"></app-header>
         <div class="intro-wrapper">
-          <div class="info animate__animated animate__fadeInDown animate__delay-1s">
+          <div class="info animate__animated animate__jackInTheBox animate__delay-1s">
             <h3>Welcome to <span class="red-text">all new</span></h3>
             <h1><span class="red-text">Virtual</span> Expo</h1>
             <h4>Property deals on the go</h4>
@@ -27,7 +27,7 @@
       <div class="wrapper">
         <app-header @modalstatusheader="showModal=$event"></app-header>
         <div class="intro-wrapper">
-          <div class="info animate__animated animate__fadeInDown animate__delay-1s">
+          <div class="info animate__animated animate__jackInTheBox animate__delay-1s">
             <h3>Welcome to <span class="red-text">all new</span></h3>
             <h1><span class="red-text">Virtual</span> Expo</h1>
             <h4>Property deals on the go</h4>

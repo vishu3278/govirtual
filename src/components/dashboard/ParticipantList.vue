@@ -27,20 +27,37 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
               <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg" alt="platinum"></figure>
               <h4 class="orange-text">Aditya Buildcon</h4> <!-- <a href="" class="button orange">Show Stall</a> -->
             </li>
+            
             <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0c1b65fc78bb7aa0645d3a4f226e3277compaylogocolor.jpg" alt="platinum"></figure>
-              <h4 class="orange-text">Infra Space Pvt. Ltd.</h4> <!-- <a href="" class="button orange">Show Stall</a> -->
+              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__278851602.jpg" alt="platinum"></figure>
+              <h4 class="orange-text">Davda Infrastructure</h4> 
+            </li>
+            <li>
+              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__1103342385.jpg" alt="platinum"></figure>
+              <h4 class="orange-text">Soham Group</h4> 
+            </li>
+            <li>
+              <figure class="logo"><img src="https://cdn.homeonline.com/public/default/frontend/custom/images/new/noagent.jpg" alt="platinum"></figure>
+              <h4 class="orange-text">Captown Infracon</h4> 
+            </li>
+            <li>
+              <figure class="logo"><img src="https://cdn.homeonline.com/public/default/frontend/custom/images/new/noagent.jpg" alt="platinum"></figure>
+              <h4 class="orange-text">Sky Infra</h4> 
             </li>
           </ul>
           <h3 class="uppercase blue-text animate__animated animate__fadeInUp ">Silver</h3>
           <ul class="animate__animated animate__fadeInUp ">
             <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/d58ade2724a17c1128837260c223803eUntitled.jpg" alt="platinum"></figure>
-              <h4 class="blue-text">Silver Builder one</h4> <!-- <a href="" class="button blue">Show Stall</a> -->
+              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0c1b65fc78bb7aa0645d3a4f226e3277compaylogocolor.jpg" alt="Silver"></figure>
+              <h4 class="blue-text">JD Infraspace Pvt Ltd</h4> 
             </li>
             <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/d58ade2724a17c1128837260c223803eUntitled.jpg" alt="platinum"></figure>
-              <h4 class="blue-text">Silver Builder two</h4> <!-- <a href="" class="button blue">Show Stall</a> -->
+              <figure class="logo"><img src="https://cdn.homeonline.com/public/default/frontend/custom/images/new/noagent.jpg" alt="Silver"></figure>
+              <h4 class="blue-text">Shrimad Constructions</h4> 
+            </li>
+            <li>
+              <figure class="logo"><img src="https://cdn.homeonline.com/public/assets/frontend/images/project/solaris-logo.jpg" alt="Silver"></figure>
+              <h4 class="blue-text">Aaryan infra build Pvt. Ltd.</h4> 
             </li>
           </ul>
         </div>

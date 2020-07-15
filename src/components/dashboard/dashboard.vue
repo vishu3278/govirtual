@@ -15,7 +15,7 @@
           <div class="button-wrap">
             <router-link to="/stalls" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
           </div>
-          <a @click.prevent="openParticipant" class="text-right link ripple" style="display: block;"><img src="~@/assets/helpdesk.png" class="helpdesk" alt=""></a>
+          <a @click.prevent="openParticipant" class="text-right link ripple" style="display: block;"><img src="https://cloudimage.homeonline.com//public/uploads/virtualexpo/helpdesk.png" class="helpdesk" alt=""></a>
         </div>
         <gold-slider></gold-slider>
         <bottom-slider></bottom-slider>
@@ -28,25 +28,25 @@
             </div>
           </div>
           <div class="gold-group">
-            <div class="gold">
-              <figure><img alt="Shri Balaji Developers" title="Shri Balaji Developers" src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0c1b65fc78bb7aa0645d3a4f226e3277compaylogocolor.jpg"></figure>
+            <div class="gold" v-for="item in goldBuilderList" :key="item.id">
+              <figure><img :alt="item.name" :src="item.image"></figure>
             </div>
-            <div class="gold">
+            <!-- <div class="gold">
               <figure><img alt="Rishabh Builders" title="Rishabh Builders" src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg"></figure>
             </div>
             <div class="gold">
-              <figure><img src="@/assets/builder-logo.png" alt="gold"></figure>
+              <figure><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__278851602.jpg" alt="gold"></figure>
             </div>
             <div class="gold">
               <figure><img src="https://cdn.homeonline.com/public/assets/frontend/images/project/solaris-logo.jpg" alt="Orrange group" title="Orrange group"></figure>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="info-desk">
           <div class="button-wrap">
             <router-link to="/stalls" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
           </div>
-          <a @click.prevent="openParticipant" class="text-right link ripple " style="display: block;"><img src="~@/assets/helpdesk.png" class="helpdesk" alt=""></a>
+          <a @click.prevent="openParticipant" class="text-right link ripple " style="display: block;"><img src="https://cloudimage.homeonline.com//public/uploads/virtualexpo/helpdesk.png" class="helpdesk" alt=""></a>
         </div>
         <bottom-slider></bottom-slider>
       </div>
@@ -64,7 +64,14 @@ export default {
   data: function() {
     return {
       activedisplay: 'none',
+      goldBuilderList: [
+        { id:3, image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__1103342385.jpg', name: 'Sagar Builder1' },
+        { id:5, image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__278851602.jpg', name: 'Sagar Builder 3' },
+        { id:6, image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg', name: 'Sagar Builder 5' },
+        /*{ id:1, image: 'https://cdn.homeonline.com/public/assets/frontend/images/project/solaris-logo.jpg', name: 'Sagar Builder 4' },
+        { id:2, image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0c1b65fc78bb7aa0645d3a4f226e3277compaylogocolor.jpg', name: 'Sagar Builder 6' },*/
 
+      ]
     }
   },
   computed: {

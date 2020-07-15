@@ -2,17 +2,17 @@
   <div>
     <section class="stall-banner">
         <video v-if="isMobileData" autoplay muted loop id="myVideo" style="width:100%; height:100%;position:absolute;">
-          <source src="dist/360-640-new.mp4" type="video/mp4">
+          <source src="https://cdn.homeonline.com/public/uploads/virtualexpo/360-640-new.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <video v-else autoplay muted loop id="myVideo" style="width:100%; height:100%;position:absolute;">
-          <source src="dist/desktop-bg.mp4" type="video/mp4">
+          <source src="https://cdn.homeonline.com/public/uploads/virtualexpo/desktop-bg.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
     </section>
     <div class="wrapper top">
       <div v-show="longshot" v-if="isMobileData" class="long-shot-image " style="position:relative; z-index:6;">
-        <img src="~@/assets/long-shot.jpg" alt="long-shot">
+        <img src="dist/long-shot.jpg" alt="long-shot">
       </div>
       <div class="back animate__animated animate__slideInRight ">
         <router-link to="/dashboard" class="icon"><svg id="Layer" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -50,14 +50,15 @@ export default {
     return {
       projectModal: false,
       stallList: [
-        { image: './dist/booth.png', id: 1, name: 'Shrimad Constructions', offer:{headline:"Flat 50000 OFF",text:"on spot booking*. Book Now."} },
-        { image: './dist/booth.png', id: 2, name: 'Aakriti Builders', offer:{headline:"Offer ",text:"lorem ipsum dolor sit amet, "} },
-        /*{ image: './dist/booth-builder.png', id: 3, name: 'Aashirwad Builders' },
-        { image: './dist/booth-builder.png', id: 4, name: 'Aashirwad Builders' },*/
-        /*{ image: './dist/another-stall.png', id: 5, name: 'Aashirwad Builders' },
-        { image: './dist/another-stall.png', id: 6, name: 'Aashirwad Builders' },*/
-        { image: './dist/booth.png', id: 7, name: 'Gaur Constructions', offer:{headline:"Free AC",text:"Get free air-conditioner on booking in expo."} },
-        { image: './dist/booth.png', id: 8, name: 'Signature Realty', offer:{headline:"offer headline",text:"lorem ipsum dolor sit amet"} },
+        { image: './dist/sankalp-stall.png', id: 2, name: 'Sankalp Realty', offer:{headline:"Exclusive offers and deals on property booking ",text:"Get exclusive offers and deals on property booking. Contact now for more details "} },
+        /*{ image: './dist/sankalp-stall.png', id: 3, name: 'Sankalp Realty', offer:{headline:"Exclusive offers and deals on property booking ",text:"Get exclusive offers and deals on property booking. Contact now for more details "} },*/
+        { image: './dist/aditya-booth.png', id: 1, name: 'Adiya Buildcon', offer:{headline:"Exclusive Offers and More. Contact Now for details", text:"Now get Exclusive Offers and More. Contact Now for details"} },
+        { image: './dist/captown-booth.png', id: 7, name: 'Captown', offer:{headline:"10 Gram Gold on Booking", text:"Get 10 Gram Gold on Booking."} },
+        { image: './dist/dadva-booth.png', id: 8, name: 'Davda', offer:{headline:"Book Property with 21000/- (refundable) & get benefits worth Rs. 1 Lac*", text:"Now, book a property with 21000/- (refundable) & get benefits worth Rs. 1 Lac* & above. T&C apply."} },
+        { image: './dist/dev-booth.png', id: 9, name: 'Dev ', offer:{headline:"Best Deals on Property Site Visit",text:"Get Best Deals on Property Site Visit"} },
+        /*{ image: './dist/dev-booth-2.png', id: 10, name: 'Dev ', offer:{headline:"Best Deals on Property Site Visit",text:"Get Best Deals on Property Site Visit"} },*/
+        { image: './dist/skylon-booth.png', id: 12, name: 'Skylon', offer:{headline:"Avail Exclusive Offers on Site Visit",text:"Best offers on site visit"} },
+        { image: './dist/booth.png', id: 11, name: 'Shrimad', offer:{headline:"offer headline",text:"lorem ipsum dolor sit amet"} },
       ],
       longshot: true
     }
@@ -105,7 +106,6 @@ export default {
   border-radius: 50px;
   width: 40px; height: 40px;
 }
-.stall-banner { background:none;}
 .carousel-3d-slide { background:rgba(250,250,250,0.125); }
 .carousel-3d-slide figure { margin:0; padding:0;}
 .long-shot-image { position:absolute; z-index:9; transform-origin: 50%; transition: all 300ms ease-in-out; transform:scale(0.1,0.1); opacity:0;}

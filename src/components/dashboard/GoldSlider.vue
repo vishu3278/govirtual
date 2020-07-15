@@ -14,13 +14,9 @@ export default {
   data: function() {
     return {
       silverBuilderList: [
-        { image: 'https://vijay.homeonline.com/180x80/public/uploads/profile/companyLogo/images_userCompanyLogo_1536228127.jpg', name: 'Sagar Builder1' },
-        { image: 'https://vijay.homeonline.com/180x80/public/uploads/profile/companyLogo/images_userCompanyLogo_160401132030.jpg', name: 'Sagar Builder 2' },
-        { image: 'https://vijay.homeonline.com/300x150/public/uploads/profile/companyLogo/images_userCompanyLogo_160507125853.jpg', name: 'Sagar Builder 3' },
-        { image: 'https://cdn.homeonline.com/public/assets/frontend/images/project/solaris-logo.jpg', name: 'Sagar Builder 4' },
-        { image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/d58ade2724a17c1128837260c223803eUntitled.jpg', name: 'Sagar Builder 5' },
-        { image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg', name: 'Sagar Builder 6' },
-
+        { id:3, image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__1103342385.jpg', name: 'Sagar Builder1' },
+        { id:5, image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__278851602.jpg', name: 'Sagar Builder 3' },
+        { id:6, image: 'https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg', name: 'Sagar Builder 5' },
       ]
     }
   },
