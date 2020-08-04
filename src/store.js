@@ -5,15 +5,14 @@ import router from './router'
 
 Vue.use(Vuex)
 
-
-
 export default new Vuex.Store({
   state: {
     step: 0,
     mobilenumber: '',
     showmenu: false,
     participant:'none',
-    project: 'none'
+    project: 'none',
+    city: false
   },
   mutations: {
     changeStatus (state,step) {
@@ -30,6 +29,9 @@ export default new Vuex.Store({
     },
     showProject (state,data) {
       state.project = data
+    },
+    showCity (state,data) {
+      state.city = data
     }
   },
   actions: {
@@ -111,6 +113,9 @@ export default new Vuex.Store({
     },
     getProject (state) {
       return state.project
+    },
+    getCity (state) {
+      return state.city
     }
   }
 })

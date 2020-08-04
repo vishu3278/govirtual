@@ -83,6 +83,14 @@ a {
 .button.blue:focus {
   background: #1c6383;
 }
+.button.green {
+  background: #3aba27;
+  color: white;
+}
+.button.green:hover,
+.button.green:focus {
+  background: #2e7d32;
+}
 .button.block {
   width: 100%;
   display: block;
@@ -104,6 +112,7 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.button[disabled] { cursor: not-allowed; }
 
 .red-text {
   color: #ff0741;
@@ -136,7 +145,8 @@ h4 {
 }
 .hero-banner,
 .lobby-banner,
-.stall-banner {
+.stall-banner,
+.auditorium-bg {
   position: fixed;
   top: 0;
   right: 0;
@@ -154,6 +164,10 @@ h4 {
   background-image: url('https://cloudimage.homeonline.com//public/uploads/virtualexpo/interior.png');
   background-size: cover;
 } 
+.auditorium-bg { background-image: url('./auditorium-mobile.jpg'); background-size: cover; }
+.iframevideo { width: 50%; margin: 40vh auto 0; position: relative; z-index: 5;}
+.iframevideo .button { display: inline-block; margin: 18px; }
+
 .error {
   color: red;
   margin-left:8px;
@@ -163,6 +177,7 @@ h4 {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: hidden;
 }
 .wrapper.top {
   top: 0;
@@ -297,6 +312,7 @@ h4 {
   align-items: flex-start;
   position: relative;
   z-index: 5;
+  min-height: 100px;
 }
 .led-panel .platinum-group {
   max-width: 38%;
@@ -458,12 +474,14 @@ h4 {
   font-size: 16px;
   overflow-y: hidden;
 }
-.builders ul {
+.builders ul,
+.citylist ul {
   list-style: none;
   padding: 0;
   margin: 10px 0 15px;
 }
-.builders li {
+.builders li,
+.citylist li {
   display: flex;
   padding-bottom: 10px;
   align-items: center;
@@ -473,6 +491,9 @@ h4 {
 }
 .builders .logo { margin: 0; width: 120px;height: 80px; margin-right: 1em; border: 1px solid #ddd;padding: 2px; }
 .builders .logo img { object-fit: contain; height: 74px; width: 120px; }
+.citylist {font-size: 14px; }
+.citylist li { border-bottom: 1px solid #ededed; padding: 0; }
+.citylist a { padding: 10px 0; color: #333; flex-grow: 1; }
 .stalls {
   position: relative;
   margin: 2em 2.5em;
@@ -483,9 +504,9 @@ h4 {
   text-align: center;
 
 }
-.stalls .stall figure { margin: 3em 0 0; position: relative; }
+.stalls .stall figure { margin: 2em 0 0; position: relative; }
 .stalls .stall figure img { position: relative; z-index: 2; }
-.stalls .stall figure:after { content: ''; background: url('https://cdn.homeonline.com/public/uploads/virtualexpo/ripple-blue.svg') no-repeat bottom center; background-size: contain; position: absolute; bottom: 1%; left: 0; width: 100%; height: 100px; z-index: 11; }
+.stalls .stall figure:after { content: ''; background: url('https://cdn.homeonline.com/public/uploads/virtualexpo/ripple-blue.svg') no-repeat bottom center; background-size: contain; position: absolute; bottom: 1%; left: 0; width: 100%; height: 100px; z-index: 11; cursor: pointer; }
 .stalls .stall .detail {margin-top: 2em;}
 .detail {
   position: relative;
@@ -633,9 +654,10 @@ h4 {
   background: #f7245c;
 }
 .list-wrapper .card .prop-title {
-  margin: 3px 0;
+  margin: 2px 0;
   font-size: 14px;
-  font-weight:normal;
+  color: #444;
+  /* font-weight:normal; */
 }
 
 .list-wrapper .card .builder-name,
@@ -650,6 +672,7 @@ h4 {
 .list-wrapper .card .builder-name {
   display: flex;
   justify-content: space-between;
+  margin-top: 2px;
 }
 .list-wrapper .card .builder-name h4 {
   color: #1d86a4;
@@ -710,13 +733,14 @@ h4 {
 .list-wrapper .card .btn-wrapper a,
 .list-wrapper .card .btn-wrapper button,
 .list-wrapper .card .btn-wrapper input {
-  padding: 8px 24px; font-size: 12px; font-weight:normal; text-transform:uppercase;
+  padding: 8px 24px; font-size: 12px; text-transform:uppercase;
 }
 
 .carousel-3d-slide { background:rgba(250,250,250,0.125);  }
 .carousel-3d-slide.current {  }
 .carousel-3d-slide img { max-width:100%; width:auto; max-height: 100%; height: auto; }
-.long-shot-image { position:absolute; z-index:9; transform-origin: 50%; transition: all 300ms ease-in-out; transform:scale(0.1,0.1); opacity:0;}
+.long-shot-image { position:fixed; left: 0; top: 0; right: 0; bottom: 0; z-index:99; transform-origin: 50%; transition: all 300ms ease-in-out; transform:scale(0.1,0.1); opacity:0;}
+.long-shot-image img { object-fit: cover; width: 100%; height: 100%; }
 .long-shot-image.visible { transform:scale(1,1); opacity:1;}
 .long-shot-image.vanished { display:none; }
 .prev[data-v-43e93932], .next[data-v-43e93932] { background:rgba(0,0,0,0.7); text-align:center; font-size:36px; color:#fff; border-radius:50px;}
@@ -739,6 +763,7 @@ button:disabled{background: #ccc !important;}
   .navbar .menu-toggle{ display: none; }
   .navbar .menu { display: none; }
   .navbar .menu-desktop { display: block; margin: 0 10px; font-size: 18px; }
+  .navbar .menu-desktop .icon { display: inline-block; height: 21px; vertical-align: bottom; }
   .navbar .menu-desktop a { padding: 10px; color: #151515; margin: 0 10px; cursor: pointer; }
   .navbar .menu-desktop a:hover { color: #ff0741; }
   .navbar .user { display: flex; align-items: center; }
@@ -756,6 +781,7 @@ button:disabled{background: #ccc !important;}
   .stall-banner {
     background-image: url('https://cloudimage.homeonline.com//public/uploads/virtualexpo/desktop-hall.jpg');
   }
+  .auditorium-bg { background-image: url('./auditorium.jpg'); background-size: cover; }
   .stalls .stall a { padding: 0 10px; display: block; }
   .intro-wrapper {
     align-items: center;
@@ -790,6 +816,7 @@ button:disabled{background: #ccc !important;}
     max-width: 780px;
     margin: auto;
   }
+
   .led-panel .platinum-group {
     min-width: 24%;
   }
@@ -859,7 +886,9 @@ button:disabled{background: #ccc !important;}
   .info-desk .button-wrap { margin-bottom: 10px; }
   .info-desk .link.ripple:before { bottom: 10%; right: 30%;  }
   .carousel-3d-slide figure { margin:0; padding:0;}
-
+  .iframevideo { width: 80%; margin-top: 34vh;  }
+  .iframevideo iframe { height: 25vh; }
+  .iframevideo .detail { text-align: center; }
 }
  @media screen and (max-width: 400px) {
   .info-desk .helpdesk {max-height: 200px;}

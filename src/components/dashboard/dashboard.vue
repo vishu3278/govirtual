@@ -13,7 +13,9 @@
         </div>
         <div class="info-desk">
           <div class="button-wrap">
-            <router-link to="/stalls" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
+            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
+            <!-- <router-link to="/auditorium" class="button green" >Now Playing</router-link> -->
+            
           </div>
           <a @click.prevent="openParticipant" class="text-right link ripple" style="display: block;"><img src="https://cloudimage.homeonline.com//public/uploads/virtualexpo/helpdesk.png" class="helpdesk" alt=""></a>
         </div>
@@ -31,27 +33,20 @@
             <div class="gold" v-for="item in goldBuilderList" :key="item.id">
               <figure><img :alt="item.name" :src="item.image"></figure>
             </div>
-            <!-- <div class="gold">
-              <figure><img alt="Rishabh Builders" title="Rishabh Builders" src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg"></figure>
-            </div>
-            <div class="gold">
-              <figure><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__278851602.jpg" alt="gold"></figure>
-            </div>
-            <div class="gold">
-              <figure><img src="https://cdn.homeonline.com/public/assets/frontend/images/project/solaris-logo.jpg" alt="Orrange group" title="Orrange group"></figure>
-            </div> -->
           </div>
         </div>
         <div class="info-desk">
           <div class="button-wrap">
-            <router-link to="/stalls" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
+            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
+            <!-- <router-link to="/auditorium" class="button green" >Now playing</router-link> -->
           </div>
           <a @click.prevent="openParticipant" class="text-right link ripple " style="display: block;"><img src="https://cloudimage.homeonline.com//public/uploads/virtualexpo/helpdesk.png" class="helpdesk" alt=""></a>
         </div>
         <bottom-slider></bottom-slider>
       </div>
     </div>
-    <participant-list></participant-list>
+    <participant-list />
+    <city-list />
   </div>
 </template>
 <script>
@@ -59,6 +54,7 @@ import Header from '@/components/layout/Header.vue';
 import Bottomslider from '@/components/dashboard/Bottomslider.vue';
 import GoldSlider from '@/components/dashboard/GoldSlider.vue';
 import ParticipantList from '@/components/dashboard/ParticipantList.vue';
+import CityList from '@/components/exhibitor/CityList.vue';
 import { isMobile } from 'mobile-device-detect';
 export default {
   data: function() {
@@ -74,6 +70,9 @@ export default {
       ]
     }
   },
+  created: function() {
+    this.openCity();
+  },
   computed: {
     isMobileData() {
       return isMobile ? true : false
@@ -83,12 +82,16 @@ export default {
     appHeader: Header,
     bottomSlider: Bottomslider,
     GoldSlider,
-    participantList: ParticipantList
+    participantList: ParticipantList,
+    CityList
   },
   methods: {
     openParticipant:function(){
         this.$store.commit('showParticipant','block')
         this.activedisplay='none'
+    },
+    openCity: function() {
+      this.$store.commit('showCity',true);
     }
   }
 }

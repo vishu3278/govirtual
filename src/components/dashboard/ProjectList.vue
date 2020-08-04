@@ -46,7 +46,7 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
               <div class="offercontent"> <span>Offer</span> Mahashivratri Offer : Get 10 lacs discount on booking of Row House
                 </div>
                   <div class="btn-wrapper">
-                    <a href="https://preprod.homeonline.com/sale/residential_plot-bhojpur_road-bhopal/IPMPLJJ5LUU8/srchdet" target="_blank" class="button  "> View Detail</a>
+                    <a href="https://preprod.homeonline.com/sale/residential_plot-bhojpur_road-bhopal/IPMPLJJ5LUU8/srchdet" target="_blank" class="button green "> View Detail</a>
                     <button class="button orange "> <span>I'm Interested</span></button>
                   </div>
             </div>
@@ -82,8 +82,8 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
               <div class="offercontent"> <span>Offer</span> Mahashivratri Offer : Get 10 lacs discount on booking of Row House
                 </div>
               <div class="btn-wrapper">
-                <a href="https://preprod.homeonline.com/sale/4BHK-apartment-kolar_road-bhopal/SH6HT8Z72UC6/srchdet" target="_blank" class="button "> View Detail</a>
-                <button class="button "> <span style="width:24px; height:16px; display:inline-block; vertical-align:middle;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.7 426.7"><path d="M421.9 56.3c-6.5-6.8-17.4-7-24.1-0.4 -0.1 0.1-0.3 0.3-0.4 0.4L119.3 334.4l-90.3-90.3c-6.8-6.5-17.6-6.4-24.1 0.4 -6.4 6.6-6.4 17.1 0 23.7l102.4 102.4c6.7 6.7 17.5 6.7 24.1 0L421.5 80.4C428.2 73.9 428.4 63.1 421.9 56.3z"/></svg></span> Captured</button>
+                <a href="https://preprod.homeonline.com/sale/4BHK-apartment-kolar_road-bhopal/SH6HT8Z72UC6/srchdet" target="_blank" class="button green"> View Detail</a>
+                <button class="button " disabled=""> Interest Captured</button>
               </div>
             </div>
           </div>
@@ -101,6 +101,11 @@ export default {
   /*props: ['display'],*/
   computed: {
     getDisplayStatus() {
+      if (this.$store.getters.getProject=='block') {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'initial';
+      }
       return this.$store.getters.getProject
     }
   },

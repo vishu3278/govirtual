@@ -25,6 +25,6 @@
         }
     }
 </script>
-<style >
-  @import '~@/assets/style.css';
+<style>
+  /*@import '~@/assets/style.css';*/
 </style>

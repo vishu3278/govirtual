@@ -11,8 +11,12 @@
         </video>
     </section>
     <div class="wrapper top">
-      <div v-show="longshot" v-if="isMobileData" class="long-shot-image " style="position:relative; z-index:6;">
+      <div v-show="longshot" v-if="isMobileData" class="long-shot-image " >
         <img src="dist/long-shot.jpg" alt="long-shot">
+      </div>
+      <div v-else class="long-shot-image " >
+        <img src="dist/longshot-desktop.jpg" alt="long-shot">
+        
       </div>
       <div class="back animate__animated animate__slideInRight ">
         <router-link to="/dashboard" class="icon"><svg id="Layer" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -72,14 +76,15 @@ export default {
       var longshotel = document.getElementsByClassName('long-shot-image');
       setTimeout(function() {
         longshotel[0].classList.add('visible');
+        document.body.style.overflow = 'hidden';
       }, 500);
       setTimeout(function() {
         longshotel[0].setAttribute('style','transform:scale(3,3);opacity:0.0');
-        // this.longshot = false;
       }, 2600);
       setTimeout(function() {
-        // longshotel[0].setAttribute('style','transform:scale(3,3);opacity:0.0');
-        this.longshot = false;
+        document.body.style.overflow = 'initial';
+        longshotel[0].style.display = 'none';
+        // this.longshot = false;
       }.bind(this), 3000);
   },
   computed: {
@@ -108,8 +113,4 @@ export default {
 }
 .carousel-3d-slide { background:rgba(250,250,250,0.125); }
 .carousel-3d-slide figure { margin:0; padding:0;}
-.long-shot-image { position:absolute; z-index:9; transform-origin: 50%; transition: all 300ms ease-in-out; transform:scale(0.1,0.1); opacity:0;}
-.long-shot-image.visible { transform:scale(1,1); opacity:1;}
-.long-shot-image.vanished { display:none; }
-
 </style>

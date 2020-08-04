@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import HomePage from './components/home/Home.vue'
-import InformationDeskPage from './components/desk/informationdesk.vue'
+import Auditorium from './components/desk/auditorium.vue'
 import ExhibitorPage from './components/exhibitor/exhibitor.vue'
 import DashboardPage from './components/dashboard/dashboard.vue'
 import StallPage from './components/dashboard/stall.vue'
@@ -12,7 +12,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/bhopal', component: HomePage },
-  { path: '/informationdesk', component: InformationDeskPage },
+  { path: '/auditorium', component: Auditorium },
   { path: '/exhibitor', component: ExhibitorPage },
   { path: '/dashboard', component: DashboardPage },
   { path: '/stall/:id', name: 'stalldetail',component: StallPage },
