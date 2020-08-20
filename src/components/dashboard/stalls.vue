@@ -16,7 +16,6 @@
       </div>
       <div v-else class="long-shot-image " >
         <img src="dist/longshot-desktop.jpg" alt="long-shot">
-        
       </div>
       <div class="back animate__animated animate__slideInRight ">
         <router-link to="/dashboard" class="icon"><svg id="Layer" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
