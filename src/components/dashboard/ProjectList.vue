@@ -23,7 +23,7 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                   </div>
                 </div>
                 <div class="col prop-details">
-                  <div class="builder-name"> <h4>Shrimad Constructions</h4> <span class="verified">Verified</span>
+                  <div class="builder-name"> <h2>Shrimad Constructions</h2> <span class="verified">Verified</span>
                   </div>
                   <div class="price flex">
                     <div class="prices">
@@ -31,9 +31,9 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                     </div>
                     <span class="rera ">Rera</span>
                   </div>
-                  <h2 class="prop-title">
+                  <h3 class="prop-title">
                     2 BHK Row House
-                  </h2>
+                  </h3>
                   <div class="location-name" > Trilanga</div>
                   <div class="proj-units">
                         Ready to move
@@ -58,7 +58,7 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                   </div>
                 </div>
                 <div class="col prop-details">
-                  <div class="builder-name"> <h4>Sankalp Realty</h4> <span class="verified">Verified</span>
+                  <div class="builder-name"> <h2>Sankalp Realty</h2> <span class="verified">Verified</span>
                   </div>
                   <div class="price flex">
                     <div class="prices">
@@ -66,9 +66,9 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
                     </div>
                     <span class="rera ">Rera</span>
                   </div>
-                  <h2 class="prop-title">
+                  <h3 class="prop-title">
                     3 BHK Villa
-                  </h2>
+                  </h3>
                   
                   <div class="location-name" > Kolar Road</div>
                   <div class="proj-units">
