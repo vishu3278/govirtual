@@ -81,7 +81,7 @@ export default new Vuex.Store({
           dispatch('setLogoutTimer', res.data.expiresIn)
         })
         .catch(error => console.log(error))*/
-     localStorage.setItem('token', '6768678678678')
+      localStorage.setItem('token', '6768678678678')
       localStorage.setItem('username', 'vijay kankar')
       console.log(authData);
       commit('changeMobileNumber',authData)

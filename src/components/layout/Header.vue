@@ -19,9 +19,9 @@
       <div class="user flex animate__animated animate__fadeIn " v-if="getUserNameHeader">
         <div>Welcome <span class="name red-text">{{getUserNameHeader}}</span></div>
       </div>
-      <div class="user " v-else>
+      <!-- <div class="user " v-else>
         <button class="button ripple red animate__animated animate__fadeIn animate__delay-1s" @click="showModaldata">Get Started</button>
-      </div>
+      </div> -->
       <div class="menu-toggle " @click="chnageDisplay"><svg v-if="getUserNameHeader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path d="M501.3 96H10.7C4.8 96 0 100.8 0 106.7s4.8 10.7 10.7 10.7h490.7c5.9 0 10.7-4.8 10.7-10.7S507.2 96 501.3 96z" />
           <path d="M501.3 245.3H10.7C4.8 245.3 0 250.1 0 256s4.8 10.7 10.7 10.7h490.7c5.9 0 10.7-4.8 10.7-10.7S507.2 245.3 501.3 245.3z" />

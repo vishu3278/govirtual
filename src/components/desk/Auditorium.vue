@@ -13,7 +13,7 @@
         <!-- <div class="offer animate__animated animate__lightSpeedInLeft animate__delay-1s">
           <strong>Now playing</strong> Indore expo intro
         </div> -->
-        <div class="animate__animated animate__lightSpeedInRight animate__delay-2s" >
+        <div class="animate__animated animate__lightSpeedInRight animate__delay-3s" >
           <router-link to="/stalls" class="button orange">Skip Video</router-link>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="modal-title">
-      <h4>Best Property Deals</h4>
+      <h4>Best Deals</h4>
       <p>Just a step away</p>
     </div>
     <form @submit.prevent="onSubmit">

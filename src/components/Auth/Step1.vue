@@ -2,7 +2,7 @@
     <div>
         <div class="modal-title" >
                 <h4>Lets get started</h4>
-                <p>Get best property deals</p>
+                <p>Get best deals</p>
             </div>
             <div class="form animate__animated animate__backInUp" >
                 <div class="button-wrap"><a class="button block red" @click="updateStatus(1)">Existing user ? Login</a></div>

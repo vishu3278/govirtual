@@ -19,7 +19,7 @@
             <path d="m54 30h-39.899l15.278-14.552c.8-.762.831-2.028.069-2.828-.761-.799-2.027-.831-2.828-.069l-17.448 16.62c-.755.756-1.172 1.76-1.172 2.829 0 1.068.417 2.073 1.207 2.862l17.414 16.586c.387.369.883.552 1.379.552.528 0 1.056-.208 1.449-.621.762-.8.731-2.065-.069-2.827l-15.342-14.552h39.962c1.104 0 2-.896 2-2s-.896-2-2-2z" /></svg></router-link> All Exhibitors
       </div>
       <div style="position:relative; z-index:5;">
-        <carousel-3d :autoplay="false" :autoplayTimeout="5000" :display="isMobileData ? 3 : 5" :width="isMobileData ? 340: 550" :height="isMobileData ? 500: 600" :border="0" :perspective="20" :controlsVisible="true" :controlsWidth="40" :controlsHeight="40" >
+        <carousel-3d :autoplay="false" :autoplayTimeout="5000" :display="isMobileData ? 1 : 3" :width="isMobileData ? 340: 550" :height="isMobileData ? 500: 600" :border="0" :perspective="50" :controlsVisible="true" :controlsWidth="40" :controlsHeight="40" >
           <slide v-for="(slide, i) in stallList" :index="i" :key="i"  >
             <figure v-on:click="showProjectModal">
               <img :src="slide.image" alt="">
@@ -47,14 +47,13 @@ export default {
   data: function() {
     return {
       stallList: [
-        { image: './dist/sankalp-stall.png', id: 2, name: 'Sankalp Realty', offer:{headline:"Exclusive offers and deals on property booking ",text:"Get exclusive offers and deals on property booking. Contact now for more details "} },
-        { image: './dist/aditya-booth.png', id: 1, name: 'Adiya Buildcon', offer:{headline:"Exclusive Offers and More. Contact Now for details", text:"Now get Exclusive Offers and More. Contact Now for details"} },
-        { image: './dist/captown-booth.png', id: 7, name: 'Captown', offer:{headline:"10 Gram Gold on Booking", text:"Get 10 Gram Gold on Booking."} },
-        { image: './dist/dadva-booth.png', id: 8, name: 'Davda', offer:{headline:"Book Property with 21000/- (refundable) & get benefits worth Rs. 1 Lac*", text:"Now, book a property with 21000/- (refundable) & get benefits worth Rs. 1 Lac* & above. T&C apply."} },
-        { image: './dist/dev-booth.png', id: 9, name: 'Dev ', offer:{headline:"Best Deals on Property Site Visit",text:"Get Best Deals on Property Site Visit"} },
-        // { image: './dist/dev-booth-2.png', id: 10, name: 'Dev ', offer:{headline:"Best Deals on Property Site Visit",text:"Get Best Deals on Property Site Visit"} },
-        { image: './dist/skylon-booth.png', id: 12, name: 'Skylon', offer:{headline:"Avail Exclusive Offers on Site Visit",text:"Best offers on site visit"} },
-        { image: './dist/booth.png', id: 11, name: 'Shrimad', offer:{headline:"offer headline",text:"lorem ipsum dolor sit amet"} },
+        { image: require('@/assets/booth-rntu.png'), id: 1, name: 'Rabindara Nath Tagore University', offer:{headline:"Exclusive Offers", text:"Now get Exclusive Offers and More. Contact Now for details"}, url:"https://www.digimela.com/platform-detail-demo/rntu/"  },
+        { image: require('@/assets/booth-sage.png'), id: 7, name: 'Sage University', offer:{headline:"Gold on Booking", text:"Get 10 Gram Gold on Booking."}, url:"https://www.digimela.com/platform-detail-demo/sage-university/" },
+        { image: require('@/assets/booth-cmr.png'), id: 2, name: 'CMR College.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
+        { image: require('@/assets/booth-nmims.png'), id: 3, name: 'Narsee Monjee.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
+        { image: require('@/assets/booth-hyundai.png'), id: 4, name: 'Hyundai Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
+        { image: require('@/assets/booth-kia.png'), id: 6, name: 'Kia Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
+        { image: require('@/assets/booth-suzuki.png'), id: 5, name: 'Suzuki', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
       ],
       projectModal: false,
       longshot: true
