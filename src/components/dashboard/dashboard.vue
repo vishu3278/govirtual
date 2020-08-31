@@ -13,7 +13,7 @@
         </div>
         <div class="info-desk">
           <div class="button-wrap">
-            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
+            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Mela</router-link>
             <!-- <router-link to="/auditorium" class="button green" >Now Playing</router-link> -->
             
           </div>
@@ -37,7 +37,7 @@
         </div>
         <div class="info-desk">
           <div class="button-wrap">
-            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Expo</router-link>
+            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Mela</router-link>
             <!-- <router-link to="/auditorium" class="button green" >Now playing</router-link> -->
           </div>
           <a @click.prevent="openParticipant" class="text-right link ripple " style="display: block;"><img src="https://cloudimage.homeonline.com//public/uploads/virtualexpo/helpdesk.png" class="helpdesk" alt=""></a>
@@ -46,7 +46,7 @@
       </div>
     </div>
     <participant-list />
-    <city-list />
+    <!-- <city-list /> -->
   </div>
 </template>
 <script>
@@ -54,7 +54,7 @@ import Header from '@/components/layout/Header.vue';
 import Bottomslider from '@/components/dashboard/Bottomslider.vue';
 import GoldSlider from '@/components/dashboard/GoldSlider.vue';
 import ParticipantList from '@/components/dashboard/ParticipantList.vue';
-import CityList from '@/components/exhibitor/CityList.vue';
+// import CityList from '@/components/exhibitor/CityList.vue';
 import { isMobile } from 'mobile-device-detect';
 export default {
   data: function() {
@@ -83,7 +83,7 @@ export default {
     bottomSlider: Bottomslider,
     GoldSlider,
     participantList: ParticipantList,
-    CityList
+    // CityList
   },
   methods: {
     openParticipant:function(){

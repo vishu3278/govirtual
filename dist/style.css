@@ -788,11 +788,11 @@ button:disabled{background: #ccc !important;}
   .intro-wrapper {
     align-items: center;
   }
-  .intro-wrapper h1 { font-size: 1.25em; }
   .intro-wrapper .info {
     width: 460px;
     font-size: 22px;
   }
+  .intro-wrapper h1 { font-size: 1.25em; }
   .intro-wrapper .pointer,
   .intro-wrapper .ripple {
     width: 160px;

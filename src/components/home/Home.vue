@@ -7,7 +7,7 @@
         <div class="intro-wrapper">
           <div class="info animate__animated animate__jackInTheBox animate__delay-1s">
             <h3>Welcome to <span class="red-text">all new</span></h3>
-            <h1><span class="red-text">Virtual</span> Expo</h1>
+            <h1><span class="red-text">My Virtual Real Estate </span>Fair</h1>
             <h4>Property deals on the go</h4>
           </div>
           <div class="pointer animate__animated animate__bounceInUp animate__delay-2s">
@@ -29,7 +29,7 @@
         <div class="intro-wrapper">
           <div class="info animate__animated animate__jackInTheBox animate__delay-1s">
             <h3>Welcome to <span class="red-text">all new</span></h3>
-            <h1><span class="red-text">Virtual</span> Expo</h1>
+            <h1><span class="red-text">My Virtual Real Estate </span>Fair</h1>
             <h4>Property deals on the go</h4>
           </div>
           <div class="pointer animate__animated animate__bounceInUp animate__delay-2s">
@@ -62,13 +62,6 @@ export default {
     isMobileData() {
       return isMobile ? true : false
     }
-  },
-  created() {
-    /*setTimeout(function() {
-      var intro = document.getElementsByClassName('intro-wrapper');
-      intro[0].style.display = 'none';
-    }, 5000);*/
-
   },
   components: {
     appModel: LoginModel,

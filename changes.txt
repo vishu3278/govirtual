@@ -1,0 +1,11 @@
+Project Details:
+1.bg using css
+2.if no elevtion image the default image
+3.builder logo on left corner/builder name in header
+4. video gallery and photo gallary count
+5. validation if count >0
+6. copyright in mobile view
+7. grey bg
+8. url :
+9. enquiry should be unique in a day.
+10. reduce spaces in mobile

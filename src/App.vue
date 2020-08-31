@@ -1,8 +1,7 @@
 <template>
-    <div>
-
+  <div>
     <router-view></router-view>
-     </div>
+  </div>
 </template>
 
 <script>
@@ -13,18 +12,13 @@
                 color: 'red'
             }
         } ,
-       
         components: {
             appHeader: Header
         },
         created(){
-
            if(this.$route.path !='/'){
                this.$store.commit('updatemenu',true);
            }
         }
     }
 </script>
-<style>
-  /*@import '~@/assets/style.css';*/
-</style>

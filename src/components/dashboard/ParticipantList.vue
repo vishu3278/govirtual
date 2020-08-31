@@ -14,18 +14,18 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
       </div>
       <div class="modal-inner">
         <div class="builders">
-          <h3 class="uppercase red-text">Platinum</h3>
-          <ul>
+          <!-- <h3 class="uppercase red-text">Platinum</h3> -->
+          <!-- <ul>
             <li>
               <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/d58ade2724a17c1128837260c223803eUntitled.jpg" alt="platinum"></figure>
-              <h4 class="red-text">Sankalp Realty</h4> <!-- <a href="" class="button red">Show Stall</a> -->
+              <h4 class="red-text">Sankalp Realty</h4> <a href="" class="button red">Show Stall</a>
             </li>
-          </ul>
-          <h3 class="uppercase orange-text animate__animated animate__fadeInUp ">Gold</h3>
+          </ul> -->
+          <!-- <h3 class="uppercase orange-text animate__animated animate__fadeInUp ">Gold</h3>
           <ul class="animate__animated animate__fadeInUp ">
             <li>
               <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg" alt="platinum"></figure>
-              <h4 class="orange-text">Aditya Buildcon</h4> <!-- <a href="" class="button orange">Show Stall</a> -->
+              <h4 class="orange-text">Aditya Buildcon</h4> <a href="" class="button orange">Show Stall</a>
             </li>
             
             <li>
@@ -44,25 +44,25 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
               <figure class="logo"><img src="https://cdn.homeonline.com/public/default/frontend/custom/images/new/noagent.jpg" alt="platinum"></figure>
               <h4 class="orange-text">Sky Infra</h4> 
             </li>
-          </ul>
-          <h3 class="uppercase blue-text animate__animated animate__fadeInUp ">Silver</h3>
+          </ul> -->
+          <!-- <h3 class="uppercase blue-text animate__animated animate__fadeInUp ">Silver</h3> -->
           <ul class="animate__animated animate__fadeInUp ">
             <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0c1b65fc78bb7aa0645d3a4f226e3277compaylogocolor.jpg" alt="Silver"></figure>
-              <h4 class="blue-text">JD Infraspace Pvt Ltd</h4> 
+              <figure class="logo"><img src="https://digimela.com/platform-detail-demo/rajyash/images/02.jpg" alt="Silver"></figure>
+              <h4 class="blue-text">RAJYASH RISE</h4> 
             </li>
             <li>
-              <figure class="logo"><img src="https://cdn.homeonline.com/public/default/frontend/custom/images/new/noagent.jpg" alt="Silver"></figure>
-              <h4 class="blue-text">Shrimad Constructions</h4> 
+              <figure class="logo"><img src="https://digimela.com/platform-detail-demo/aggarwal/images/logo.jpg" alt="Silver"></figure>
+              <h4 class="blue-text">AGRAWAL CONSTRUCTION CO</h4> 
             </li>
             <li>
-              <figure class="logo"><img src="https://cdn.homeonline.com/public/assets/frontend/images/project/solaris-logo.jpg" alt="Silver"></figure>
-              <h4 class="blue-text">Aaryan infra build Pvt. Ltd.</h4> 
+              <figure class="logo"><img src="https://digimela.com/platform-detail-demo/nirvana/images/logo.jpg" alt="Silver"></figure>
+              <h4 class="blue-text">NIRWANA GREENS</h4> 
             </li>
           </ul>
         </div>
       </div>
-      <router-link to="/stalls" class="button red block " style="position: sticky; bottom:0; border-radius:0;">Explore Expo</router-link>
+      <!-- <router-link to="/stalls" class="button red block " style="position: sticky; bottom:0; border-radius:0;">Explore Expo</router-link> -->
       <!-- <button class="button red block " >Explore Expo</button> -->
     </div>
   </div>

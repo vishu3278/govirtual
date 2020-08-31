@@ -9,7 +9,7 @@
     </div>
     <div class="iframevideo ">
       <iframe width="100%" height="300" src="https://www.youtube.com/embed/WQPex9w4XN0?controls=0;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div id="iframevideo" ></div>
+      <!-- <div id="iframevideo" ></div> -->
       <div class="detail">
         <div class="offer animate__animated animate__lightSpeedInLeft animate__delay-1s">
           <strong>Now playing</strong> Indore expo intro

@@ -2,26 +2,26 @@ import Vue from 'vue'
 import App from './App.vue'
 import Vuelidate from 'vuelidate'
 import VueCarousel from 'vue-carousel';
-import Carousel3d from 'vue-carousel-3d';
+// import Carousel3d from 'vue-carousel-3d';
 
 import router from './router'
 import store from './store'
 
 Vue.use(Vuelidate);
 Vue.use(VueCarousel);
-Vue.use(Carousel3d);
+// Vue.use(Carousel3d);
 
 router.beforeEach((to, from, next) => {
       // redirect to login page if not logged in and trying to access a restricted page
-    const publicPages = ['/bhopal'];
+    const publicPages = ['/home'];
     const authRequired = !publicPages.includes(to.path);
     const loggedIn = localStorage.getItem('token');
   
     if (authRequired && !loggedIn) {
-      return next('/bhopal');
+      return next('/home');
     }
     if (!authRequired && loggedIn) {
-      next('/dashboard');
+      next('/stalls');
     }
   
     next();

@@ -87,7 +87,7 @@ export default new Vuex.Store({
       commit('changeMobileNumber',authData)
       commit('changeStatus', 2)
      
-      router.push('/dashboard');
+      router.push('/stalls');
     },
     logout ({commit}) {
      commit('changeMobileNumber','')
