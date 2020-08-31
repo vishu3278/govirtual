@@ -3,58 +3,17 @@
     <section class="lobby-banner"></section>
     <div class="wrapper top">
       <app-header></app-header>
-      <div v-if="isMobileData">
-        <div class="led-panel">
-          <div class="platinum-group">
-            <div class="platinum">
-              <figure><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/d58ade2724a17c1128837260c223803eUntitled.jpg" alt="platinum"></figure>
-            </div>
-          </div>
-        </div>
-        <div class="info-desk">
-          <div class="button-wrap">
-            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Mela</router-link>
-            <!-- <router-link to="/auditorium" class="button green" >Now Playing</router-link> -->
-            
-          </div>
-          <a @click.prevent="openParticipant" class="text-right link ripple" style="display: block;"><img src="https://cloudimage.homeonline.com//public/uploads/virtualexpo/helpdesk.png" class="helpdesk" alt=""></a>
-        </div>
-        <gold-slider></gold-slider>
-        <bottom-slider></bottom-slider>
-      </div>
-      <div v-else>
-        <div class="led-panel">
-          <div class="platinum-group">
-            <div class="platinum">
-              <figure><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/d58ade2724a17c1128837260c223803eUntitled.jpg" alt="platinum"></figure>
-            </div>
-          </div>
-          <div class="gold-group">
-            <div class="gold" v-for="item in goldBuilderList" :key="item.id">
-              <figure><img :alt="item.name" :src="item.image"></figure>
-            </div>
-          </div>
-        </div>
-        <div class="info-desk">
-          <div class="button-wrap">
-            <router-link to="/auditorium" class="button  red animate__animated animate__headShake animate__repeat-3 ">Explore Mela</router-link>
-            <!-- <router-link to="/auditorium" class="button green" >Now playing</router-link> -->
-          </div>
-          <a @click.prevent="openParticipant" class="text-right link ripple " style="display: block;"><img src="https://cloudimage.homeonline.com//public/uploads/virtualexpo/helpdesk.png" class="helpdesk" alt=""></a>
-        </div>
-        <bottom-slider></bottom-slider>
+      <div class="dashboard-links">
+        <router-link to="/auditorium" class="audi-link left"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 13.28125 6.78125 L 4.78125 15.28125 L 4.09375 16 L 4.78125 16.71875 L 13.28125 25.21875 L 14.71875 23.78125 L 7.9375 17 L 28 17 L 28 15 L 7.9375 15 L 14.71875 8.21875 Z"/></svg> <span>Auditorium</span></router-link>
+        <router-link to="/auditorium" class="res-link right"><span>Resource Desk</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 18.71875 6.78125 L 17.28125 8.21875 L 24.0625 15 L 4 15 L 4 17 L 24.0625 17 L 17.28125 23.78125 L 18.71875 25.21875 L 27.21875 16.71875 L 27.90625 16 L 27.21875 15.28125 Z"/></svg></router-link>
+        <router-link to="/stalls" class="hall-link right"><span>Exhibit Hall</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 18.71875 6.78125 L 17.28125 8.21875 L 24.0625 15 L 4 15 L 4 17 L 24.0625 17 L 17.28125 23.78125 L 18.71875 25.21875 L 27.21875 16.71875 L 27.90625 16 L 27.21875 15.28125 Z"/></svg></router-link>
       </div>
     </div>
-    <participant-list />
-    <!-- <city-list /> -->
   </div>
 </template>
 <script>
 import Header from '@/components/layout/Header.vue';
-import Bottomslider from '@/components/dashboard/Bottomslider.vue';
-import GoldSlider from '@/components/dashboard/GoldSlider.vue';
-import ParticipantList from '@/components/dashboard/ParticipantList.vue';
-// import CityList from '@/components/exhibitor/CityList.vue';
+
 import { isMobile } from 'mobile-device-detect';
 export default {
   data: function() {
@@ -80,10 +39,6 @@ export default {
   },
   components: {
     appHeader: Header,
-    bottomSlider: Bottomslider,
-    GoldSlider,
-    participantList: ParticipantList,
-    // CityList
   },
   methods: {
     openParticipant:function(){
@@ -97,4 +52,6 @@ export default {
 }
 
 </script>
+<style scoped>
+.wrapper.top { min-height: 40vh;}
 </style>

@@ -7,8 +7,8 @@
         <div class="intro-wrapper">
           <div class="info animate__animated animate__jackInTheBox animate__delay-1s">
             <h3>Welcome to <span class="red-text">all new</span></h3>
-            <h1><span class="red-text">My Virtual Real Estate </span>Fair</h1>
-            <h4>Property deals on the go</h4>
+            <h1><span class="red-text">Virtual Event </span>Demo</h1>
+            <h4>Event tagline</h4>
           </div>
           <div class="pointer animate__animated animate__bounceInUp animate__delay-2s">
             <svg xmlns="http://www.w3.org/2000/svg" width="81" height="142" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" viewBox="0 0 61 106">
@@ -29,8 +29,8 @@
         <div class="intro-wrapper">
           <div class="info animate__animated animate__jackInTheBox animate__delay-1s">
             <h3>Welcome to <span class="red-text">all new</span></h3>
-            <h1><span class="red-text">My Virtual Real Estate </span>Fair</h1>
-            <h4>Property deals on the go</h4>
+            <h1><span class="red-text">Virtual Event </span>Demo</h1>
+            <h4>Event tagline</h4>
           </div>
           <div class="pointer animate__animated animate__bounceInUp animate__delay-2s">
             <svg xmlns="http://www.w3.org/2000/svg" width="81" height="142" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" viewBox="0 0 61 106">

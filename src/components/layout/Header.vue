@@ -22,12 +22,12 @@
       <div class="user " v-else>
         <button class="button ripple red animate__animated animate__fadeIn animate__delay-1s" @click="showModaldata">Get Started</button>
       </div>
-      <div class="menu-toggle " @click="chnageDisplay"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <div class="menu-toggle " @click="chnageDisplay"><svg v-if="getUserNameHeader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path d="M501.3 96H10.7C4.8 96 0 100.8 0 106.7s4.8 10.7 10.7 10.7h490.7c5.9 0 10.7-4.8 10.7-10.7S507.2 96 501.3 96z" />
           <path d="M501.3 245.3H10.7C4.8 245.3 0 250.1 0 256s4.8 10.7 10.7 10.7h490.7c5.9 0 10.7-4.8 10.7-10.7S507.2 245.3 501.3 245.3z" />
           <path d="M501.3 394.7H10.7C4.8 394.7 0 399.4 0 405.3 0 411.2 4.8 416 10.7 416h490.7c5.9 0 10.7-4.8 10.7-10.7C512 399.4 507.2 394.7 501.3 394.7z" /></svg>
       </div>
-      <div v-if="getUserNameHeader" class="menu animate__animated animate__fadeInDown animate__faster" :style="{ display: activedisplay}">
+      <div v-if="getUserNameHeader" class="menu animate__animated animate__fadeInRight animate__faster" :style="{ display: activedisplay}">
         <ul>
           <li><a @click="openParticipant">Exhibitors</a></li>
           <li><a href="#" target="_blank">Help</a></li>

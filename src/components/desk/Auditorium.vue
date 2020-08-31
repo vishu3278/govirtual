@@ -9,13 +9,12 @@
     </div>
     <div class="iframevideo ">
       <iframe width="100%" height="300" src="https://www.youtube.com/embed/WQPex9w4XN0?controls=0;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!-- <div id="iframevideo" ></div> -->
       <div class="detail">
-        <div class="offer animate__animated animate__lightSpeedInLeft animate__delay-1s">
+        <!-- <div class="offer animate__animated animate__lightSpeedInLeft animate__delay-1s">
           <strong>Now playing</strong> Indore expo intro
-        </div>
+        </div> -->
         <div class="animate__animated animate__lightSpeedInRight animate__delay-2s" >
-          <router-link to="/stalls" class="button ">Skip</router-link>
+          <router-link to="/stalls" class="button orange">Skip Video</router-link>
         </div>
       </div>
     </div>
@@ -28,41 +27,6 @@ export default {
       done: false,
     }
   },
-  created: function() {
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    /*var player = new YT.Player('iframevideo', {
-        height: '360',
-        width: '640',
-        videoId: 'WQPex9w4XN0',
-        playerVars : '',
-        events: {
-          'onReady': this.onPlayerReady,
-          'onStateChange': this.onPlayerStateChange
-        }
-      });*/
-
-  },
-  methods: {
-    onPlayerReady: function (event) {
-      player.playVideo();
-    },
-    /*onPlayerStateChange: function (event) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 6000);
-        done = true;
-      }
-    },*/
-    stopVideo: function() {
-      player.stopVideo();
-    },
-  }
 }
 
 </script>

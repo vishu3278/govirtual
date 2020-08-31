@@ -3,7 +3,7 @@ import App from './App.vue'
 import Vuelidate from 'vuelidate'
 import VueCarousel from 'vue-carousel';
 // import Carousel3d from 'vue-carousel-3d';
-
+import '@/assets/style.css';
 import router from './router'
 import store from './store'
 

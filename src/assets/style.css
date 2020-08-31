@@ -153,19 +153,26 @@ h4 {
   bottom: 0;
   left: 0;
   z-index: 2;
-  background: url('mobile-entry-bg.jpg') no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-banner {
+  background: url('mobile-entry.jpg');
+  background-position: center;
   background-size: cover;
 }
 .lobby-banner {
-  background-image: url('https://cloudimage.homeonline.com//public/uploads/virtualexpo/lobby.png');
+  background-image: url('mobile-lobby.jpg');
   background-size: cover;
+  background-position: top center;
 }
 .stall-banner {
-  background-image: url('https://cloudimage.homeonline.com//public/uploads/virtualexpo/interior.png');
+  background-image: url('mobile-hall.jpg');
   background-size: cover;
 } 
-.auditorium-bg { background-image: url('auditorium-mobile.jpg'); background-size: cover; }
-.iframevideo { width: 50%; margin: 20vh auto 0; position: relative; z-index: 5;}
+.auditorium-bg { background-image: url('mobile-auditorium.jpg'); background-size: cover; }
+.iframevideo { width: 37%; margin: 28vh auto 0; position: relative; z-index: 5;}
+.iframevideo iframe { height: 280px; }
 .iframevideo .button { display: inline-block; margin: 18px; }
 
 .error {
@@ -192,7 +199,9 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(90deg, #ffffff, #feed01);
+  /*background: linear-gradient(90deg, #ffffff, #feed01);*/
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.15);
   position: relative;
   z-index: 8;
 }
@@ -245,6 +254,20 @@ h4 {
 
 .navbar .help { width: 30px; height: 26px; margin-right: 10px; }
 
+.dashboard-links { position: relative; z-index: 5; height: 250px; font-size: 16px; }
+.dashboard-links svg { height: 28px; width: 28px; }
+.dashboard-links .audi-link,
+.dashboard-links .res-link,
+.dashboard-links .hall-link { position: absolute; z-index: 8; max-width: 42%; height: 50px; background: #fff; display: inline-flex; align-items: center; color: #000; font-weight: bold; text-transform: uppercase; }
+.dashboard-links .left { left: 15px; }
+.dashboard-links .left span { margin: 0 10px 0 5px;  }
+.dashboard-links .right { right: 15px; }
+.dashboard-links .right span { margin: 0 5px 0 10px;  }
+.dashboard-links .left:before { content: ''; position: relative; left: -6px; border-left: 6px solid #ff7701; border-right: 6px solid #fff; width: 0; height: 100%; transform: skewX(-15deg); }
+.dashboard-links .right:after { content: ''; position: relative; right: -6px; border-right: 6px solid #ff7701; border-left: 6px solid #fff; width: 0; height: 100%; transform: skewX(15deg); }
+.dashboard-links .audi-link { top: 88px; }
+.dashboard-links .res-link { top: 20px; }
+.dashboard-links .hall-link { top: 100px; }
 .intro-wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -423,7 +446,7 @@ h4 {
   overflow-y: auto;
 }
 .modal .modal-inner {
-  background: url('modal-header.jpg') no-repeat center top;
+  background: url('virtual-logo.png') no-repeat center top;
   background-size: contain;
   padding: 300px 20px 20px;
   overflow: hidden;
@@ -742,7 +765,7 @@ h4 {
 .carousel-3d-slide.current {  }
 .carousel-3d-slide img { max-width:100%; width:auto; max-height: 100%; height: auto; }
 .long-shot-image { position:fixed; left: 0; top: 0; right: 0; bottom: 0; z-index:99; transform-origin: 50%; transition: all 300ms ease-in-out; transform:scale(0.1,0.1); opacity:0;}
-.long-shot-image img { object-fit: cover; width: 100%; height: 100%; }
+.long-shot-image img { object-fit: contain; width: 100%; height: 100%; }
 .long-shot-image.visible { transform:scale(1,1); opacity:1;}
 .long-shot-image.vanished { display:none; }
 .prev[data-v-43e93932], .next[data-v-43e93932] { background:rgba(0,0,0,0.7); text-align:center; font-size:36px; color:#fff; border-radius:50px;}
@@ -775,15 +798,15 @@ button:disabled{background: #ccc !important;}
   .hero-banner,
   .lobby-banner,
   .stall-banner {
-    background-image: url('desktop-entry-bg.jpg');
+    background-image: url('desktop-entry.jpg');
   }
   .lobby-banner {
-    background-image: url('desktop-lobby-new.jpg');
+    background-image: url('desktop-lobby.jpg');
   }
   .stall-banner {
-    background-image: url('https://cloudimage.homeonline.com//public/uploads/virtualexpo/desktop-hall.jpg');
+    background-image: url('desktop-hall.jpg');
   }
-  .auditorium-bg { background-image: url('auditorium.jpg'); background-size: cover; }
+  .auditorium-bg { background-image: url('desktop-auditorium.jpg'); background-size: cover; }
   .stalls .stall a { padding: 0 10px; display: block; }
   .intro-wrapper {
     align-items: center;
@@ -866,6 +889,11 @@ button:disabled{background: #ccc !important;}
   .detail .stall { margin-right: 20px; }
   .detail .right-col { margin-right: auto; }
   .info-desk .link.ripple:before { bottom: 16%; right: 16.5%; }
+  .dashboard-links { padding: 1px 3em; }
+  .dashboard-links .left { left: 4.75em; }
+  .dashboard-links .right { right: 4.75em; }
+  .dashboard-links .res-link { top: 60px; }
+  .dashboard-links .hall-link { top: 160px; }
 }
 @media screen and (max-width: 799px) {
   .led-panel,
@@ -893,7 +921,10 @@ button:disabled{background: #ccc !important;}
   .iframevideo iframe { height: 25vh; }
   .iframevideo .detail { text-align: center; }
 }
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 600px) {
+  .iframevideo { width: 90%; margin-top: 30vh;  }
+  .iframevideo iframe { height: 30vh; }
+  .iframevideo .detail { margin-top: 3em; }
   .info-desk .helpdesk {max-height: 200px;}
   .info-desk .link.ripple:before { bottom: 10%; right: 20%;  }
 } 
