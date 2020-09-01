@@ -19,9 +19,13 @@
         <carousel :autoplay="!projectModal" :autoplayTimeout="5000" :loop="true" :speed="1000" :perPageCustom="[[320, 1], [800, 2]]" :scrollPerPage="false" :paginationEnabled="false" :navigationEnabled="true">
           <slide class="stall animate__animated animate__backInRight animate__fast" v-for="list in stallList" v-bind:key="list.id" v-bind:data-id="list.id" :data-id="list.id" :data-name="list.name">
             <figure>
-              <a :href="list.url">
-              <img :src="list.image" :alt="list.name">
-            </a>
+              <a :href="list.url" target="_blank" v-if="list.category != 'auto' && list.url != ''">
+                <img :src="list.image" :alt="list.name">
+              </a>
+              <span @click="showProjectModal" v-else-if="list.category == 'auto'">
+                <img :src="list.image" :alt="list.name">
+              </span>
+              <img v-else :src="list.image" alt="list.name">
             </figure>
             <!-- <div class="detail">
               <div class="offer animate__animated animate__bounceIn animate__delay-1s">
@@ -47,13 +51,13 @@ export default {
     return {
       projectModal: false,
       stallList: [
-        { image: require('@/assets/booth-rntu.png'), id: 1, name: 'Rabindara Nath Tagore University', offer:{headline:"Exclusive Offers", text:"Now get Exclusive Offers and More. Contact Now for details"}, url:"https://www.digimela.com/platform-detail-demo/rntu/"  },
-        { image: require('@/assets/booth-sage.png'), id: 7, name: 'Sage University', offer:{headline:"Gold on Booking", text:"Get 10 Gram Gold on Booking."}, url:"https://www.digimela.com/platform-detail-demo/sage-university/" },
-        { image: require('@/assets/booth-cmr.png'), id: 2, name: 'CMR College.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
-        { image: require('@/assets/booth-nmims.png'), id: 3, name: 'Narsee Monjee.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
-        { image: require('@/assets/booth-hyundai.png'), id: 4, name: 'Hyundai Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
-        { image: require('@/assets/booth-kia.png'), id: 6, name: 'Kia Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
-        { image: require('@/assets/booth-suzuki.png'), id: 5, name: 'Suzuki', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com" },
+        { image: require('@/assets/booth-rntu.png'), id: 1, category:'edu', name: 'Rabindara Nath Tagore University', offer:{headline:"Exclusive Offers", text:"Now get Exclusive Offers and More. Contact Now for details"}, url:"https://www.digimela.com/platform-detail-demo/rntu/"  },
+        { image: require('@/assets/booth-sage.png'), id: 7, category:'edu', name: 'Sage University', offer:{headline:"Gold on Booking", text:"Get 10 Gram Gold on Booking."}, url:"https://www.digimela.com/platform-detail-demo/sage-university/" },
+        /*{ image: require('@/assets/booth-cmr.png'), id: 2, category:'edu', name: 'CMR College.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"" },*/
+        { image: require('@/assets/booth-omega.png'), id: 3, category:'prop', name: 'Omega.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/profiledetails/7022" },
+        { image: require('@/assets/booth-hyundai.png'), id: 4, category:'auto', name: 'Hyundai Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com/platform-detail-demo/hyundai" },
+        /*{ image: require('@/assets/booth-kia.png'), id: 6, category:'auto', name: 'Kia Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"" },*/
+        { image: require('@/assets/booth-suzuki.png'), id: 5, category:'auto', name: 'Suzuki', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/profiledetails/7023" },
       ],
       longshot: true
     }

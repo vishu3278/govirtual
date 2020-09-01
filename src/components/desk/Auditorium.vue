@@ -14,7 +14,7 @@
           <strong>Now playing</strong> Indore expo intro
         </div> -->
         <div class="animate__animated animate__lightSpeedInRight animate__delay-3s" >
-          <router-link to="/stalls" class="button orange">Skip Video</router-link>
+          <router-link to="/stalls" class="button orange" style="font-size:18px;">Skip Video</router-link>
         </div>
       </div>
     </div>

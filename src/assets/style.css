@@ -258,19 +258,26 @@ h4 {
 .navbar .help { width: 30px; height: 26px; margin-right: 10px; }
 
 .dashboard-links { position: relative; z-index: 5; height: 250px; font-size: 16px; }
+.dashboard-links a { transition: all 200ms ease-out; }
+.dashboard-links a:hover,
+.dashboard-links a:focus { background: #000; color: #feed01; outline: none; }
 .dashboard-links svg { height: 28px; width: 28px; }
+.dashboard-links a:hover svg,
+.dashboard-links a:focus svg{ fill: #feed01; }
 .dashboard-links .audi-link,
 .dashboard-links .res-link,
-.dashboard-links .hall-link { position: absolute; z-index: 8; max-width: 42%; height: 50px; background: #fff; display: inline-flex; align-items: center; color: #000; font-weight: bold; text-transform: uppercase; }
+.dashboard-links .hall-link { position: absolute; z-index: 8; max-width: 42%; height: 50px; background: #feed01; display: inline-flex; align-items: center; color: #000; font-weight: bold; text-transform: uppercase; }
 .dashboard-links .left { left: 15px; }
 .dashboard-links .left span { margin: 0 10px 0 5px;  }
 .dashboard-links .right { right: 15px; }
 .dashboard-links .right span { margin: 0 5px 0 10px;  }
-.dashboard-links .left:before { content: ''; position: relative; left: -6px; border-left: 6px solid #ff7701; border-right: 6px solid #fff; width: 0; height: 100%; transform: skewX(-15deg); }
-.dashboard-links .right:after { content: ''; position: relative; right: -6px; border-right: 6px solid #ff7701; border-left: 6px solid #fff; width: 0; height: 100%; transform: skewX(15deg); }
-.dashboard-links .audi-link { top: 88px; }
+.dashboard-links .left:before { content: ''; position: relative; left: -6px; border-left: 6px solid #000; border-right: 6px solid #feed01; width: 0; height: 100%; transform: skewX(-15deg); }
+.dashboard-links .right:after { content: ''; position: relative; right: -6px; border-right: 6px solid #000; border-left: 6px solid #feed01; width: 0; height: 100%; transform: skewX(15deg); }
+.dashboard-links .audi-link { top: 95px; }
 .dashboard-links .res-link { top: 20px; }
-.dashboard-links .hall-link { top: 100px; }
+.dashboard-links .hall-link { top: 95px; }
+.dashboard-links .ripple:before { content: ''; background: url('ripple-blue.svg') no-repeat center; background-size: contain; width: 100px; height: 100px; left: 20%; top: 50%; position: absolute; transform: translate(-50%, -50%); }
+
 .intro-wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -420,7 +427,7 @@ h4 {
   display: inline-block; font-size: 20px; font-weight: bold;
 }
 .info-desk .button.ripple:before { height: 200%; }
-.info-desk .link.ripple:before { background-image: url('https://cdn.homeonline.com/public/uploads/virtualexpo/ripple-blue.svg'); width: 100px; height: 100px; bottom: 10%; right: 20%; left: initial; top: initial; transform: none; }
+.info-desk .link.ripple:before { background-image: url('ripple-blue.svg'); width: 100px; height: 100px; bottom: 10%; right: 20%; left: initial; top: initial; transform: none; }
 .info-desk .helpdesk {
   max-height: 280px;
 }
@@ -517,7 +524,7 @@ h4 {
 .builders li .button {
   margin-left: auto;
 }
-.builders .logo { margin: 0; width: 120px;height: 80px; margin-right: 1em; border: 1px solid #ddd;padding: 2px; }
+.builders .logo { flex: 0 0 auto; margin: 0; width: 120px;height: 80px; margin-right: 1em; border: 1px solid #ddd;padding: 2px; }
 .builders .logo img { object-fit: contain; height: 74px; width: 120px; }
 .citylist {font-size: 14px; }
 .citylist li { border-bottom: 1px solid #ededed; padding: 0; }
@@ -534,7 +541,7 @@ h4 {
 }
 .stalls .stall figure { margin: 2em 0 0; position: relative; min-height: 310px; }
 .stalls .stall figure img { position: relative; z-index: 2; }
-.stalls .stall figure a:after { content: ''; background: url('https://cdn.homeonline.com/public/uploads/virtualexpo/ripple-blue.svg') no-repeat bottom center; background-size: contain; position: absolute; bottom: 1%; left: 0; width: 100%; height: 100px; z-index: 11; pointer-events: none; }
+.stalls .stall figure a:after { content: ''; background: url('ripple-blue.svg') no-repeat bottom center; background-size: contain; position: absolute; bottom: 1%; left: 0; width: 100%; height: 100px; z-index: 11; pointer-events: none; }
 .stalls .stall .detail {margin-top: 2em;}
 .detail {
   position: relative;
@@ -895,8 +902,9 @@ button:disabled{background: #ccc !important;}
   .dashboard-links { padding: 1px 3em; }
   .dashboard-links .left { left: 4.75em; }
   .dashboard-links .right { right: 4.75em; }
+  .dashboard-links .audi-link { top: 120px; }
   .dashboard-links .res-link { top: 60px; }
-  .dashboard-links .hall-link { top: 160px; }
+  .dashboard-links .hall-link { top: 120px; }
 }
 @media screen and (max-width: 799px) {
   .led-panel,

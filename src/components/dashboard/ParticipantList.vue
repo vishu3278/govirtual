@@ -14,51 +14,21 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
       </div>
       <div class="modal-inner">
         <div class="builders">
-          <!-- <h3 class="uppercase red-text">Platinum</h3> -->
-          <!-- <ul>
-            <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/d58ade2724a17c1128837260c223803eUntitled.jpg" alt="platinum"></figure>
-              <h4 class="red-text">Sankalp Realty</h4> <a href="" class="button red">Show Stall</a>
-            </li>
-          </ul> -->
-          <!-- <h3 class="uppercase orange-text animate__animated animate__fadeInUp ">Gold</h3>
-          <ul class="animate__animated animate__fadeInUp ">
-            <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/0239658fece2e867511fabbdade7fec3Logo.jpg" alt="platinum"></figure>
-              <h4 class="orange-text">Aditya Buildcon</h4> <a href="" class="button orange">Show Stall</a>
-            </li>
-            
-            <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__278851602.jpg" alt="platinum"></figure>
-              <h4 class="orange-text">Davda Infrastructure</h4> 
-            </li>
-            <li>
-              <figure class="logo"><img src="https://cloudimage.homeonline.com/300x150/public/uploads/profile/companyLogo/Untitled-1__1103342385.jpg" alt="platinum"></figure>
-              <h4 class="orange-text">Soham Group</h4> 
-            </li>
-            <li>
-              <figure class="logo"><img src="https://cdn.homeonline.com/public/default/frontend/custom/images/new/noagent.jpg" alt="platinum"></figure>
-              <h4 class="orange-text">Captown Infracon</h4> 
-            </li>
-            <li>
-              <figure class="logo"><img src="https://cdn.homeonline.com/public/default/frontend/custom/images/new/noagent.jpg" alt="platinum"></figure>
-              <h4 class="orange-text">Sky Infra</h4> 
-            </li>
-          </ul> -->
+          
           <!-- <h3 class="uppercase blue-text animate__animated animate__fadeInUp ">Silver</h3> -->
           <ul class="animate__animated animate__fadeInUp ">
-            <li>
-              <figure class="logo"><img src="https://digimela.com/platform-detail-demo/rajyash/images/02.jpg" alt="Silver"></figure>
-              <h4 class="blue-text">RAJYASH RISE</h4> 
+            <li v-for="item in participant">
+              <figure class="logo"><img src="https://via.placeholder.com/120x80.png" alt=""></figure>
+              <h4 class="blue-text" v-text="item.name"></h4> 
             </li>
-            <li>
+            <!-- <li>
               <figure class="logo"><img src="https://digimela.com/platform-detail-demo/aggarwal/images/logo.jpg" alt="Silver"></figure>
               <h4 class="blue-text">AGRAWAL CONSTRUCTION CO</h4> 
             </li>
             <li>
               <figure class="logo"><img src="https://digimela.com/platform-detail-demo/nirvana/images/logo.jpg" alt="Silver"></figure>
               <h4 class="blue-text">NIRWANA GREENS</h4> 
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -69,6 +39,19 @@ c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z" />
 </template>
 <script>
 export default {
+  data: function() {
+    return {
+      participant: [
+        { image: require('@/assets/booth-rntu.png'), id: 1, name: 'Rabindara Nath Tagore University', offer:{headline:"Exclusive Offers", text:"Now get Exclusive Offers and More. Contact Now for details"}, url:"https://www.digimela.com/platform-detail-demo/rntu/"  },
+        { image: require('@/assets/booth-sage.png'), id: 7, name: 'Sage University', offer:{headline:"Gold on Booking", text:"Get 10 Gram Gold on Booking."}, url:"https://www.digimela.com/platform-detail-demo/sage-university/" },
+        
+        { image: require('@/assets/booth-omega.png'), id: 3, name: 'Omega', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/profiledetails/7022" },
+        { image: require('@/assets/booth-hyundai.png'), id: 4, name: 'Hyundai Motors', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com/platform-detail-demo/hyundai" },
+        
+        { image: require('@/assets/booth-suzuki.png'), id: 5, name: 'Suzuki', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/profiledetails/7023" },
+      ]
+    }
+  },
   computed: {
     getDisplayStatus() {
       return this.$store.getters.getParticipant

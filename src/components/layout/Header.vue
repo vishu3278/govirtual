@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar">
       <div class="logo animate__animated animate__bounceIn">
-        <img src="https://digimela.com/public/images/logo1.png" alt="logo">
+        <img src="@/assets/digimela-logo.png" alt="logo">
       </div>
       <div class="menu-desktop uppercase" v-if="getUserNameHeader">
         <!-- <a @click="openParticipant">Information Desk</a> -->

@@ -21,4 +21,4 @@ const routes = [
   { path: '*', redirect: '/stalls' }
 ]
 
-export default new VueRouter({mode: 'hash', base: "https://www.digimela.com/platform-detail-demo", routes})
+export default new VueRouter({mode: 'hash', base: "platform-detail-demo/", routes})
