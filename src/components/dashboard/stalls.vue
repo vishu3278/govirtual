@@ -19,12 +19,12 @@
         <carousel :autoplay="!projectModal" :autoplayTimeout="5000" :loop="true" :speed="1000" :perPageCustom="[[320, 1], [800, 2]]" :scrollPerPage="false" :paginationEnabled="false" :navigationEnabled="true">
           <slide class="stall animate__animated animate__backInRight animate__fast" v-for="list in stallList" v-bind:key="list.id" v-bind:data-id="list.id" :data-id="list.id" :data-name="list.name">
             <figure>
-              <a :href="list.url" target="_blank" v-if="list.category != 'auto' && list.url != ''">
+              <a :href="list.url" target="_blank" v-if="list.url">
                 <img :src="list.image" :alt="list.name">
               </a>
-              <span @click="showProjectModal" v-else-if="list.category == 'auto'">
+              <!-- <span @click="showProjectModal" v-else-if="list.category == 'auto'">
                 <img :src="list.image" :alt="list.name">
-              </span>
+              </span> -->
               <img v-else :src="list.image" alt="list.name">
             </figure>
             <!-- <div class="detail">
@@ -56,8 +56,8 @@ export default {
         /*{ image: require('@/assets/booth-cmr.png'), id: 2, category:'edu', name: 'CMR College.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"" },*/
         { image: require('@/assets/booth-omega.png'), id: 3, category:'prop', name: 'Omega.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/profiledetails/7022" },
         { image: require('@/assets/booth-hyundai.png'), id: 4, category:'auto', name: 'Hyundai Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://digimela.com/platform-detail-demo/hyundai" },
-        /*{ image: require('@/assets/booth-kia.png'), id: 6, category:'auto', name: 'Kia Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"" },*/
-        { image: require('@/assets/booth-suzuki.png'), id: 5, category:'auto', name: 'Suzuki', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/profiledetails/7023" },
+        { image: require('@/assets/booth-seltos.png'), id: 6, category:'auto', name: 'Kia Motors.', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/platform-detail-demo/kia-seltos/" },
+        { image: require('@/assets/booth-gixxer.png'), id: 5, category:'auto', name: 'Suzuki', offer:{headline:"Exclusive offers and deals", text:"Get exclusive offers and deals on property booking. Contact now for more details "}, url:"https://www.digimela.com/platform-detail-demo/gixxer-250/" },
       ],
       longshot: true
     }
